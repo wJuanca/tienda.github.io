@@ -1,0 +1,241 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    background-color: #ffffff;
+    font-size: sans-serif;
+    color: #383838;
+    position: absolute;
+    padding-bottom: 0;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  /* Estilos del encabezado */
+  .header {
+    background-color: #000000;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+   /**/
+   .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+ /* Estilo para el footer */
+ .footer {
+  padding: 3.5em 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw; /* Cambiado de "100%" a "100vw" */
+}
+
+.footer-container {
+  color: #000000;
+  margin-left: auto; /* Agregado margin-left: auto */
+  margin-right: auto; /* Agregado margin-right: auto */
+  max-width: 100%; /* Agregado max-width: 100% */
+}
+
+/* Resto de los estilos para el footer */
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col-md-3,
+footer .col-md-2,
+footer .col-md-4 {
+  flex-basis: 25%;
+  margin-bottom: 30px;
+}
+
+footer h6 {
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+}
+
+footer a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Estilos para el footer */
+.footer-container {
+  color: #000000;
+}
+
+.footer-container h6 {
+  font-size: 20px; /* Ajusta el tamaño de la letra de los títulos h6 */
+}
+
+.footer-container p {
+  font-size: 14px; /* Ajusta el tamaño de la letra de los párrafos */
+}
+
+.footer-container a {
+  font-size: 14px; /* Ajusta el tamaño de la letra de los enlaces */
+}
+
+  
+  
+  /* Estilos del menú */
+  .menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    margin-left: -190px;
+  }
+
+/*este bloque es para das mas espacio entre cada opcion*/
+  .menu li a {
+    margin-right: 30px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  /* Estilos del contenido principal */
+  .main {
+    flex: 1;
+    padding: 16px;
+    margin-top: 64px;
+    margin-bottom: 0;
+  }
+  
+  .main h1 {
+    margin-top: 70px; /* Ajusta el valor según tus necesidades */
+    text-align: center;
+  }
+  
+  
+  /* Posición del logo */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+  
+  .logo {
+    width: 200px;
+    height: auto;
+    margin-right: 8px;
+  }
+  
+  /* Estilos de las imágenes */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px; /*Ajusta la distancia entre el header y las imagenes*/
+  }
+  
+  .principales-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Ajusta el valor según el espacio deseado */
+  }
+  
+  
+  
+  .principales-group h2 {
+    visibility: hidden;
+  }
+  
+  .secundarias-group h2 {
+    display: none;
+  }
+  
+  .principales-group .image {
+    width: 300px;
+    height: auto;
+    margin-right: 100px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+}
+
+.principales-group .image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1.9);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+  
+  .secundarias-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  .secundarias-group .image {
+    width: 350px;
+    height: 350px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+  
+  /* Código para modificar los logos de las marcas */
+  .brand-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 60px; /* Ajusta el margen inferior según tus necesidades */
+    overflow: hidden;
+    width: max-content;
+  }
+  
+  
+  .brand-container h2 {
+    visibility: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .brand-image {
+    width: 100px; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+    margin: 1px; /* Ajusta el margen según tus necesidades (arriba, derecha, abajo, izquierda) */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .brand-image:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+  

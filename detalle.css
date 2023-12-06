@@ -1,0 +1,110 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.product-details {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Resto de estilos... */
+
+.product-image-container {
+  width: 30%; /* Modificado */
+  margin-right: 20px; /* Modificado */
+}
+
+.product-image {
+  width: 100%;
+}
+
+.product-info {
+  width: 65%; /* Modificado */
+}
+
+.product-name {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-description h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-description p,
+.product-details p {
+  margin-bottom: 10px;
+}
+
+.buy-button {
+  display: block;
+  padding: 8px 15px; /* Modificado */
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para los botones de talla */
+
+.size-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.size-button {
+  display: inline-block;
+  padding: 3px 8px; /* Modificado */
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.size-button.active {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Estilos para los botones de color */
+
+.color-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.color-button {
+  display: inline-block;
+  padding: 3px 8px; /* Modificado */
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.color-button.active {
+  background-color: #333;
+  color: #fff;
+}
